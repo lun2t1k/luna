@@ -1,0 +1,10 @@
+/node_modules
+/.yarn
+/.idea
+.DS_Store
+/dist
+deploy.json
++.js
++.css
++.scss
+READme-dev.md
