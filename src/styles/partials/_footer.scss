@@ -24,6 +24,7 @@
       li {
         display: flex;
         gap: 32px;
+
         div {
           font-size: 32px;
           font-style: normal;
@@ -33,9 +34,11 @@
         }
   
         a {
+          position: relative;
           display: flex;
           align-items: center;
           gap: 32px;
+          overflow: hidden;
     
           span {
             font-size: 32px;
@@ -46,16 +49,24 @@
           }
   
           .link {
-            display: none;
+            position: absolute;
+            transform: translateY(100%);
+            transition: all 0.3s;
           }
   
+          .name {
+            transition: all 0.3s;
+          }
+          
           &:hover {
             .name {
-              display: none;
+              position: absolute;
+              transform: translateY(-100%);
             }
-  
+            
             .link {
-              display: inline;
+              position: static;
+              transform: translateY(0%);
             }
           }
     
