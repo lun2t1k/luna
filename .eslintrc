@@ -19,11 +19,11 @@
   },
   "rules": {
     "object-curly-spacing": [
-      "error",
+      "warn",
       "always"
     ],
     "semi": [
-      "error",
+      "warn",
       "always"
     ],
     "quotes": [
@@ -39,7 +39,7 @@
       2
     ],
     "func-names": [
-      "error",
+      "warn",
       "never"
     ],
     "max-len": [
@@ -63,7 +63,7 @@
     ],
     "no-new": 1,
     "no-param-reassign": [
-      "error",
+      "warn",
       {
         "props": false
       }

@@ -1,21 +1,39 @@
 * {
-  font-family: $font-default;
+  font-family: $font-eng;
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
-  color: $text-color-defailt;
+  color: #fff;
   font-feature-settings: 'lnum';
   -webkit-tap-highlight-color: transparent !important;
 }
+
+html {
+  &::-webkit-scrollbar {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  cursor: url('@/assets/img/Ellipse-forDark.svg'), auto;
+}
+
 body {
-  background: $bg-default;
+  background: #000000;
+  padding: 110px 0;
   @media(min-width: $bp-min-768) {
     overflow: hidden auto;
   }
 }
+
 .container {
-  max-width: 1480px;
+  max-width: 1740px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+button, a {
+  &:hover {
+    cursor: none;
+  }
 }

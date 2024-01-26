@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 {% block head %}
 	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no"/>
+	<meta name="theme-color" content="#000000" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
+
 	<title>{{ title }}</title>
-	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {% endblock %}
 </head>
+
 <body>
 {% block page %}
 	{% block header %}
@@ -21,6 +29,16 @@
 		{% include '../partials/footer.twig' %}
 	{% endblock %}
 {% endblock %}
+
+{# <section>
+		<div class="container">
+			<div class="wrap">
+				<a href="ui.html">Link to Page List</a>
+			</div>
+		</div>
+</section> #}
+
 <script type="module" src="/src/scripts/index.js"></script>
 </body>
+
 </html>

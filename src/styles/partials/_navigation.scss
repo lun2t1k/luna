@@ -1,0 +1,66 @@
+.navigation {
+  margin-top: 200px;
+
+  .nav {
+    ul li {
+      padding: 100px;
+      border-bottom: 2px solid #fff;
+
+      &:first-child {
+        border-top: 2px solid #fff;
+      }
+    }
+
+    ul li a {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: lowercase;
+      transition: all 0.3s;
+      
+      &:hover {
+        padding-left: 148px;
+
+        .slash {
+          transform: translateX(0%);
+        }
+        
+        .arrow {
+          transform: translateX(100%);
+        }
+      }
+        
+      .slash {
+        font-size: 200px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: lowercase;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+      }
+
+      .arrow {
+        width: 94px;
+        height: 94px;
+        background-image: url("data:image/svg+xml,%3Csvg width='101' height='101' viewBox='0 0 101 101' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 3L97 97M97 97V12.9997M97 97H13.1075' stroke='white' stroke-width='7'/%3E%3C/svg%3E%0A");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        transform: translateX(0%);
+        transition: all 0.3s;
+      }
+    }
+  }
+}
