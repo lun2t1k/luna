@@ -6,6 +6,12 @@
   color: #fff;
   font-feature-settings: 'lnum';
   -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 html {
@@ -14,7 +20,7 @@ html {
     opacity: 0;
     visibility: hidden;
   }
-  cursor: url('@/assets/img/Ellipse-forDark.svg'), auto;
+  cursor: url('@/assets/img/Ellipse-forDark.svg') 20 20, none;
 }
 
 body {
@@ -33,7 +39,5 @@ body {
 }
 
 button, a {
-  &:hover {
-    cursor: none;
-  }
+  cursor: none;
 }

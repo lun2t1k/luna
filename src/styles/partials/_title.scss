@@ -1,0 +1,24 @@
+.title {
+  margin-top: 110px;
+
+  &-wrap {
+    display: flex;
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  &-count {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+}
