@@ -1,149 +1,48 @@
 {% extends "templates/layouts/base.twig" %}
-
 {% set title = "LUNA / TOOLS" %}
 
+{% set links = [ 
+  {'title': 'jitter', 'href': 'https://jitter.video/files/', 'image': 'src/assets/img/tools/jitter.png', 'tags': ['motion design']},
+  {'title': 'bezi', 'href': 'https://www.bezi.com/recent', 'image': 'src/assets/img/tools/bezi.png', 'tags': ['3d']},
+  {'title': 'endless <br> tools', 'href': 'https://beta.endlesstools.io/', 'image': 'src/assets/img/tools/endless-tools.png', 'tags': ['3d']},
+  {'title': 'spline', 'href': 'https://app.spline.design/home', 'image': 'src/assets/img/tools/spline.png', 'tags': ['3d', '/', 'motion design']},
+  {'title': 'borrowlab', 'href': 'https://www.burrowlab.com/demo', 'image': 'src/assets/img/tools/borrowlab.png', 'tags': ['fonts']},
+  {'title': 'morflax <br> studio', 'href': 'https://studio.morflax.com/', 'image': 'src/assets/img/tools/morflax-studio.png', 'tags': ['3d']},
+  {'title': 'shots', 'href': 'https://www.shots.so/', 'image': 'src/assets/img/tools/shots.png', 'tags': ['posts', '/', 'socials']},
+  {'title': 'mock <br> rocket', 'href': 'https://app.mockrocket.io/', 'image': 'src/assets/img/tools/mockrocket.png', 'tags': ['3d', '/', 'mockup', '/', 'animation']},
+  {'title': 'pixcap', 'href': 'https://pixcap.com/explore', 'image': 'src/assets/img/tools/pixcap.png', 'tags': ['3d', '/', 'posts', '/', 'socials']}
+] %}
+
 {% block content %}
-  <div class="title">
-    <div class="container">
-      <div class="title-wrap">
-        <h1>tools</h1>
-        <div class="title-count">(9)</div>
-      </div>
+<div class="title">
+  <div class="container">
+    <div class="title-wrap">
+      <h1>tools</h1>
+      <div class="title-count">(9)</div>
     </div>
   </div>
+</div>
 
-  <div class="content">
-    <div class="container">
-      <div class="content-grid">
-        <a href="https://jitter.video/files/" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-          <div class="image">
-            <img src="src/assets/img/tools/jitter.png" alt="jitter">
-          </div>
-          <div class="tags">
-            <span>motion design</span>
-          </div>
-          <h3>
-            jitter
-            <div class="arrow"></div>
-          </h3>
-        </a>
-
-        <a href="https://www.bezi.com/recent" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-          <div class="image">
-            <img src="src/assets/img/tools/bezi.png" alt="bezi">
-          </div>
-          <div class="tags">
-            <span>3d</span>
-          </div>
-          <h3>
-            bezi
-            <div class="arrow"></div>
-          </h3>
-        </a>
-
-        <a href="https://beta.endlesstools.io/" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-          <div class="image">
-            <img src="src/assets/img/tools/endless-tools.png" alt="endless tools">
-          </div>
-          <div class="tags">
-            <span>3d</span>
-          </div>
-          <h3>
-            endless <br> tools
-            <div class="arrow"></div>
-          </h3>
-        </a>
-        
-        <a href="https://app.spline.design/home" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-          <div class="image">
-            <img src="src/assets/img/tools/spline.png" alt="spline">
-          </div>
-          <div class="tags">
-            <span>3d</span>
-            <span>/</span>
-            <span>motion desing</span>
-          </div>
-          <h3>
-            spline
-            <div class="arrow"></div>
-          </h3>
-        </a>
-
-        <a href="https://www.burrowlab.com/demo" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-          <div class="image">
-            <img src="src/assets/img/tools/borrowlab.png" alt="borrowlab">
-          </div>
-          <div class="tags">
-            <span>fonts</span>
-          </div>
-          <h3>
-            borrowlab
-            <div class="arrow"></div>
-          </h3>
-        </a>
-
-        <a href="https://studio.morflax.com/" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-          <div class="image">
-            <img src="src/assets/img/tools/morflax-studio.png" alt="morflax studio">
-          </div>
-          <div class="tags">
-            <span>3d</span>
-          </div>
-          <h3>
-            morflax <br> studio
-            <div class="arrow"></div>
-          </h3>
-        </a>
-
-        <a href="https://www.shots.so/" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-          <div class="image">
-            <img src="src/assets/img/tools/shots.png" alt="shots">
-          </div>
-          <div class="tags">
-            <span>posts</span>
-            <span>/</span>
-            <span>socials</span>
-          </div>
-          <h3>
-            shots
-            <div class="arrow"></div>
-          </h3>
-        </a>
-
-        <a href="https://app.mockrocket.io/" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-          <div class="image">
-            <img src="src/assets/img/tools/mockrocket.png" alt="mockrocket">
-          </div>
-          <div class="tags">
-            <span>3d</span>
-            <span>/</span>
-            <span>mockups</span>
-            <span>/</span>
-            <span>animation</span>
-          </div>
-          <h3>
-            mock <br> rocket
-            <div class="arrow"></div>
-          </h3>
-        </a>
-
-        <a href="https://pixcap.com/explore" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-          <div class="image">
-            <img src="src/assets/img/tools/pixcap.png" alt="pixcap">
-          </div>
-          <div class="tags">
-            <span>3d</span>
-            <span>/</span>
-            <span>posts</span>
-            <span>/</span>
-            <span>socials</span>
-          </div>
-          <h3>
-            pixcap
-            <div class="arrow"></div>
-          </h3>
-        </a>
-      </div>
+<div class="content">
+  <div class="container">
+    <div class="content-grid">
+    {% for link in links %}
+      <a href="{{ link.href }}" target="_blank" rel="noopener noreferrer" class="content-grid__card">
+        <div class="image">
+          <img src="{{ link.image }}" alt="{{ link.title }}">
+        </div>
+        <div class="tags">
+        {% for tag in link.tags %}
+          <span>{{ tag }}</span>
+        {% endfor %}
+        </div>
+        <h3>
+          {{ link.title }}
+          <div class="arrow"></div>
+        </h3>
+      </a>
+    {% endfor %}
     </div>
   </div>
+</div>
 {% endblock %}
