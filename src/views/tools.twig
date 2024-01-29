@@ -1,6 +1,8 @@
 {% extends "templates/layouts/base.twig" %}
 {% set title = "LUNA / TOOLS" %}
 
+{% import '/templates/components/link.twig' as Link %}
+
 {% set links = [ 
   {'title': 'jitter', 'href': 'https://jitter.video/files/', 'image': 'src/assets/img/tools/jitter.png', 'tags': ['motion design']},
   {'title': 'bezi', 'href': 'https://www.bezi.com/recent', 'image': 'src/assets/img/tools/bezi.png', 'tags': ['3d']},
@@ -27,20 +29,7 @@
   <div class="container">
     <div class="content-grid">
     {% for link in links %}
-      <a href="{{ link.href }}" target="_blank" rel="noopener noreferrer" class="content-grid__card">
-        <div class="image">
-          <img src="{{ link.image }}" alt="{{ link.title }}">
-        </div>
-        <div class="tags">
-        {% for tag in link.tags %}
-          <span>{{ tag }}</span>
-        {% endfor %}
-        </div>
-        <h3>
-          {{ link.title }}
-          <div class="arrow"></div>
-        </h3>
-      </a>
+      {{ Link.content(link) }}
     {% endfor %}
     </div>
   </div>

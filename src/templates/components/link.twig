@@ -1,0 +1,16 @@
+{% macro content(props) %}
+<a href="{{ props.href }}" target="_blank" rel="noopener noreferrer" class="content-grid__card">
+  <div class="image">
+    <img src="{{ props.image }}" alt="{{ props.title }}">
+  </div>
+  <div class="tags">
+  {% for tag in props.tags %}
+    <span>{{ tag }}</span>
+  {% endfor %}
+  </div>
+  <h3>
+    {{ props.title }}
+    <div class="arrow"></div>
+  </h3>
+</a>
+{% endmacro %}
