@@ -4,10 +4,10 @@
   .nav {
     ul li {
       padding: 100px;
-      border-bottom: 2px solid #fff;
+      border-bottom: 2px solid;
 
       &:first-child {
-        border-top: 2px solid #fff;
+        border-top: 2px solid;
       }
     }
 
@@ -22,7 +22,6 @@
       font-weight: 400;
       line-height: normal;
       text-transform: lowercase;
-      transition: all 0.3s;
       
       &:hover {
         padding-left: 148px;
@@ -47,19 +46,10 @@
         top: 0;
         left: 0;
         transform: translateX(-100%);
-        transition: all 0.3s;
       }
 
       .arrow {
-        width: 94px;
-        height: 94px;
-        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 99.98 99.98'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B stroke-width: 0px; fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='99.98 99.98 12.58 99.98 12.58 92.98 88.02 92.98 0 4.95 4.95 0 92.98 88.02 92.98 12.47 99.98 12.47 99.98 99.98'/%3E%3C/svg%3E");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-
         transform: translateX(0%);
-        transition: all 0.3s;
       }
     }
   }
@@ -118,11 +108,6 @@
           .link {
             position: absolute;
             transform: translateY(100%);
-            transition: all 0.3s;
-          }
-  
-          .name {
-            transition: all 0.3s;
           }
           
           &:hover {
@@ -135,15 +120,6 @@
               position: static;
               transform: translateY(0%);
             }
-          }
-    
-          .arrow {
-            width: 18px;
-            height: 18px;
-            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18.85 18.85'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B stroke-width: 0px; fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='.71 18.85 0 18.15 17.15 1 2.27 1 2.27 0 18.85 0 18.85 16.56 17.85 16.56 17.85 1.71 .71 18.85'/%3E%3C/svg%3E");
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: contain;
           }
         }
       }

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header-wrap">
       <a href="#navigation" class="header-logo" id="logo">
-        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" class="theme dark svg">
           <path d="M45 90C32.9805 90 21.6799 85.3189 13.1805 76.8195C4.68107 68.3201 0 57.0195 0 45C0 32.9805 4.68107 21.6799 13.1805 13.1805C21.6799 4.68107 32.9805 0 45 0C57.0195 0 68.3201 4.68107 76.8195 13.1805C85.3189 21.6799 90 32.9805 90 45C90 57.0195 85.3189 68.3201 76.8195 76.8195C68.3201 85.3189 57.0195 90 45 90ZM45 1.2426C33.3124 1.2426 22.3243 5.79408 14.0592 14.0592C5.79408 22.3243 1.2426 33.3124 1.2426 45C1.2426 56.6876 5.79408 67.6757 14.0592 75.9408C22.3243 84.2059 33.3124 88.7574 45 88.7574C56.6876 88.7574 67.6757 84.2059 75.9408 75.9408C84.2059 67.6757 88.7574 56.6876 88.7574 45C88.7574 33.3124 84.2059 22.3243 75.9408 14.0592C67.6757 5.79408 56.6876 1.2426 45 1.2426Z" fill="white" />
           <path d="M20.6308 34.6811C17.0858 34.6811 14.2012 31.7965 14.2012 28.2515C14.2012 24.7065 17.0858 21.8219 20.6308 21.8219C24.1757 21.8219 27.0604 24.7065 27.0604 28.2515C27.0604 31.7965 24.1757 34.6811 20.6308 34.6811ZM20.6308 23.0627C17.771 23.0627 15.4438 25.3899 15.4438 28.2497C15.4438 31.1095 17.771 33.4367 20.6308 33.4367C23.4905 33.4367 25.8178 31.1095 25.8178 28.2497C25.8178 25.3899 23.4905 23.0627 20.6308 23.0627Z" fill="white" />
           <path d="M58.9154 79.5781C55.3704 79.5781 52.4858 76.6935 52.4858 73.1485C52.4858 69.6036 55.3704 66.7172 58.9154 66.7172C62.4604 66.7172 65.345 69.6018 65.345 73.1485C65.345 76.6953 62.4604 79.5781 58.9154 79.5781ZM58.9154 67.9598C56.0556 67.9598 53.7284 70.287 53.7284 73.1485C53.7284 76.0101 56.0556 78.3355 58.9154 78.3355C61.7752 78.3355 64.1024 76.0083 64.1024 73.1485C64.1024 70.2888 61.7752 67.9598 58.9154 67.9598Z" fill="white" />
@@ -13,21 +13,31 @@
         </svg>
       </a>
 
-      <h2 class="header-text">about design</h2>
+      <h2 class="theme dark text header-text">about design</h2>
 
       <div class="header-settings">
         <ul>
-          <li><a href="#" class="active">dark</a></li>
-          <li>/</li>
-          <li class="header-settings__link"><a href="#">light</a></li>
-          <li>/</li>
-          <li class="header-settings__link"><a href="#">color</a></li>
+          <li class="header-settings__link theme dark header-link-border">
+            <a class="theme dark text active" id="darkThemeBtn">dark</a>
+          </li>
+          <li class="theme dark text">/</li>
+          <li class="header-settings__link theme dark header-link-border">
+            <a class="theme dark text" id="lightThemeBtn">light</a>
+          </li>
+          <li class="theme dark text">/</li>
+          <li class="header-settings__link theme dark header-link-border">
+            <a class="theme dark text" id="colorThemeBtn">color</a>
+          </li>
         </ul>
 
         <ul>
-          <li class="header-settings__link"><a href="#">ru</a></li>
-          <li>/</li>
-          <li><a href="#" class="active">eng</a></li>
+          <li class="header-settings__link theme dark header-link-border">
+            <a href="#" class="theme dark text">ru</a>
+          </li>
+          <li class="theme dark text">/</li>
+          <li class="header-settings__link theme dark header-link-border">
+            <a href="#" class="theme dark text active">eng</a>
+          </li>
         </ul>
       </div>
     </div>

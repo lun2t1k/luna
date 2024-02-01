@@ -5,12 +5,14 @@
   </div>
   <div class="tags">
   {% for tag in props.tags %}
-    <span>{{ tag }}</span>
+    <span class="theme dark text">{{ tag }}</span>
   {% endfor %}
   </div>
-  <h3>
+  <h3 class="theme dark text">
     {{ props.title }}
-    <div class="arrow"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37.71 37.71" class="theme dark svg arrow">
+      <polygon points="1.41 37.71 0 36.29 34.29 2 4.54 2 4.54 0 37.71 0 37.71 33.13 35.71 33.13 35.71 3.41 1.41 37.71" fill="#fff" />
+    </svg>
   </h3>
 </a>
 {% endmacro %}

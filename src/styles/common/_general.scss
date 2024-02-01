@@ -3,7 +3,6 @@
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
-  color: #fff;
   font-feature-settings: 'lnum';
   -webkit-tap-highlight-color: transparent !important;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -12,6 +11,7 @@
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
+  transition: all 0.3s ease;
 }
 
 html {
@@ -20,11 +20,10 @@ html {
     opacity: 0;
     visibility: hidden;
   }
-  cursor: url('@/assets/img/Ellipse-forDark.svg') 20 20, none;
+  cursor: none;
 }
 
 body {
-  background: #000000;
   padding: 110px 0;
   @media(min-width: $bp-min-768) {
     overflow: hidden auto;
@@ -40,4 +39,19 @@ body {
 
 button, a {
   cursor: none;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s;
+}
+
+.cursorclick {
+  width: 60px;
+  height: 60px;
 }

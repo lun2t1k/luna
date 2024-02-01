@@ -17,7 +17,7 @@
 {% endblock %}
 </head>
 
-<body>
+<body class="theme dark background">
 {% block page %}
 	{% block header %}
 		{% include '../partials/header.twig' %}
@@ -30,7 +30,8 @@
 	{% endblock %}
 {% endblock %}
 
-<script type="module" src="/src/scripts/index.js"></script>
+	<div class="theme dark cursor"></div>
+	<script type="module" src="/src/scripts/index.js"></script>
 </body>
 
 </html>
