@@ -21,6 +21,19 @@ function changeTheme(event) {
     i.classList.add(btn.id.replace('ThemeBtn', ''))
   })
 
+  switch (btn.id.replace('ThemeBtn', '')) {
+    case 'dark':
+      document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
+      break
+    case 'light':
+      document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
+      break
+    case 'color':
+      document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#6A6A6A');
+      break
+    default:
+      break
+  }
   localStorage.setItem('theme', btn.id.replace('ThemeBtn', ''))
 }
 

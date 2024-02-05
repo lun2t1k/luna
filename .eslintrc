@@ -18,14 +18,14 @@
     "sourceType": "module"
   },
   "rules": {
-    "object-curly-spacing": [
-      "warn",
-      "always"
-    ],
-    "semi": [
-      "warn",
-      "always"
-    ],
+    // "object-curly-spacing": [
+    //   "warn",
+    //   "always"
+    // ],
+    // "semi": [
+    //   "warn",
+    //   "always"
+    // ],
     "quotes": [
       "error",
       "single",
@@ -34,14 +34,14 @@
         "allowTemplateLiterals": true
       }
     ],
-    "indent": [
-      "error",
-      2
-    ],
-    "func-names": [
-      "warn",
-      "never"
-    ],
+    // "indent": [
+    //   "error",
+    //   2
+    // ],
+    // "func-names": [
+    //   "warn",
+    //   "never"
+    // ],
     "max-len": [
       "error",
       {
