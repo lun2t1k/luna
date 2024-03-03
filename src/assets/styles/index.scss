@@ -5,8 +5,27 @@
 @import "./common/color-themes";
 
 @import "./components/header";
+@import "./components/navMenu";
 @import "./components/footer";
 
 @import "./partials/hero";
 @import "./partials/title";
 @import "./partials/content";
+
+@keyframes rotate-loop {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

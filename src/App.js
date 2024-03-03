@@ -1,37 +1,37 @@
 import {useEffect} from 'react'
 import {HashRouter, Routes, Route} from 'react-router-dom'
-import Footer from './views/components/Footer'
 import Header from './views/components/Header'
+import Footer from './views/components/Footer'
 import routes from './routes'
-
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import 'animate.css'
-
-AOS.init()
-
 import initThemes from './utils/theme'
 import initCursor from './utils/cursor'
 import initSmoothScroll from './utils/smooth-scroll'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function App() {
   useEffect(() => {
     initThemes()
     initCursor()
     initSmoothScroll()
+    AOS.init()
   }, [])
 
   return (
     <HashRouter>
-      <Header />
+      <div className='container'>
+        <Header />
 
-      <Routes>
-        {routes.map(route => (
-          <Route key={route.path} path={route.path} element={route.component} />
-        ))}
-      </Routes>
+        <main>
+          <Routes>
+            {routes.map(route => (
+              <Route key={route.path} path={route.path} element={route.component} />
+            ))}
+          </Routes>
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </HashRouter>
   )
 }
