@@ -1,84 +1,74 @@
 {
-  "root": true,
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": [
     "eslint:recommended",
+    "plugin:react/recommended",
     "prettier"
   ],
-  "ignorePatterns": [
-    "dist/**/*",
-    "src/data/**/*",
-    "node_modules/**/*"
-  ],
+  "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "sourceType": "module"
   },
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
   "rules": {
-    // "object-curly-spacing": [
-    //   "warn",
-    //   "always"
-    // ],
-    // "semi": [
-    //   "warn",
-    //   "always"
-    // ],
-    "quotes": [
-      "error",
-      "single",
-      {
-        "avoidEscape": true,
-        "allowTemplateLiterals": true
-      }
-    ],
-    // "indent": [
-    //   "error",
-    //   2
-    // ],
-    // "func-names": [
-    //   "warn",
-    //   "never"
-    // ],
-    "max-len": [
-      "error",
-      {
-        "code": 600
-      }
-    ],
-    "camelcase": 1,
-    "class-methods-use-this": 1,
-    "consistent-return": 1,
-    "import/no-extraneous-dependencies": 0,
-    "no-alert": "off",
-    "no-console": "off",
-    "no-continue": 1,
-    "no-multi-assign": [
-      "error",
-      {
-        "ignoreNonDeclaration": true
-      }
-    ],
-    "no-new": 1,
-    "no-param-reassign": [
+    "no-unused-vars": [
       "warn",
       {
-        "props": false
+        "caughtErrors": "none"
       }
     ],
-    "no-plusplus": 1,
-    "no-return-assign": 1,
-    "no-tabs": 1,
-    "no-underscore-dangle": 1,
-    "no-unused-vars": 1,
-    "prefer-destructuring": [
-      "error",
+    // "object-curly-spacing": [
+    //     "warn",
+    //     "always",
+    //     {
+    //         "arraysInObjects": true,
+    //         "objectsInObjects": true
+    //     }
+    // ],
+    // "array-bracket-spacing": [
+    //     "warn",
+    //     "always",
+    //     {
+    //         "singleValue": true,
+    //         "objectsInArrays": true,
+    //         "arraysInArrays": true
+    //     }
+    // ],
+    // "react/jsx-curly-spacing": [
+    //     "warn",
+    //     {
+    //         "when": "always",
+    //         "children": true
+    //     }
+    // ],
+    "react/jsx-uses-react": "warn",
+    "react/jsx-uses-vars": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/display-name": [
+      "off",
       {
-        "object": true,
-        "array": false
+        "ignoreTranspilerName": true,
+        "checkContextObjects": true
       }
     ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

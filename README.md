@@ -1,67 +1,72 @@
-# Frontend multipage builder
+# Getting Started with Create React App
 
-## Environment requirements
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- node v18.18.0
-- yarn
-- git
+Node version: v20.11.0 Npm version: v10.2.4
 
-## Setup
+## Available Scripts
 
-### 1. Installing project dependencies
+In the project directory, you can run:
 
-To install project dependencies, enter the following commands in the command line:
+### `npm start`
 
-```bash
-yarn
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-If additional packages are required, then to install them, run the command:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- The installation of the package, while the information about it, is automatically registered in the "devDependencies" section of the "
-package.json"
+### `npm test`
 
-```bash
-yarn add package_name -D 
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- The installation of the package, while the information about it is automatically registered in the "dependencies" section of the "package.json"
+### `npm run build`
 
-```bash
-yarn add package_name
-```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## How to use the environment
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- `yarn dev` - start live-server
-- `yarn build` - building a project
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Project file structure
+### `npm run eject`
 
-```bash
-├── dist/                      # compiled project code ready to be hosted on the server
-├── public/                    # static project files (images, videos, etc.)
-├── src/                       # sources
-│   ├── assets/                # resources used in the project (images, fonts, etc.)
-│   │   ├── fonts/             # fonts
-│   │   └── img/               # images
-│   ├── data/                  # arrays of data for output of values in twig files
-│   │   └── site.js            # file for data output
-│   ├── scripts/               # js filse
-│   │   ├── helpers/           # auxiliary js files
-│   │   ├── index.js           # the entry point of js files
-│   │   └── main/              # js project files
-│   ├── styles/                # scss filse
-│   │   ├── common/            # basic style files for the project
-│   │   ├── components/        # styles for reused parts of the application
-│   │   ├── helpers/           # auxiliary css files
-│   │   ├── partials/          # styles for logical parts of the application
-│   │   └── index.scss         # the entry point of css files
-│   ├── templates/             # templates and pieces of code
-│   │   ├── layouts/           # page templates
-│   │   └── partials/          # pluggable pieces of code
-│   └── views/                 # twig files of project pages (converted to html)
-│       ├── index.twig         # main page
-│       └── ui.twig            # list of site pages
-└── vite.config.js             # configuration file vite
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

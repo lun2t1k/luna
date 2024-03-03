@@ -1,22 +1,65 @@
 {
-  "name": "vite-multipage-builder",
+  "name": "luna",
+  "version": "0.1.0",
+  "homepage": "https://lun2t1k.github.io/luna",
+  "bugs": {
+    "url": "https://lun2t1k.github.io/luna",
+    "email": "lun2t1k@gmail.com"
+  },
+  "author": "Dmitry Krutkin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lun2t1k/luna"
+  },
   "private": true,
-  "version": "0.0.1",
-  "type": "module",
-  "node": ">=18.18.0",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.2",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "5.0.1",
+    "sass": "^1.71.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.{js,jsx}",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx}",
+    "format": "prettier --write src/**/*.{js,jsx} --config ./.prettierrc",
+    "deploy": "gh-pages -d dist"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "@vituum/vite-plugin-twig": "^1.0.0",
-    "eslint": "^8.52.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.0.3",
-    "prettier-eslint": "^16.1.2",
-    "sass": "^1.69.5",
-    "vite": "^4.4.5",
-    "vituum": "^1.0.0"
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5"
   }
 }
