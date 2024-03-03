@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/luna/static/css/main.bc4a386d.css",
-    "main.js": "/luna/static/js/main.526a9d7b.js",
-    "static/js/300.c76a1915.chunk.js": "/luna/static/js/300.c76a1915.chunk.js",
+    "main.css": "/luna/static/css/main.894aaec8.css",
+    "main.js": "/luna/static/js/main.8eead7c6.js",
+    "static/js/560.57ed4adf.chunk.js": "/luna/static/js/560.57ed4adf.chunk.js",
     "static/js/453.217ffa20.chunk.js": "/luna/static/js/453.217ffa20.chunk.js",
     "static/media/Mulish-VariableFont_wght.ttf": "/luna/static/media/Mulish-VariableFont_wght.c3d26f19ac7f56a0fd74.ttf",
     "static/media/pixcap.png": "/luna/static/media/pixcap.c88e663f4b7d3e47c2f5.png",
@@ -16,13 +16,13 @@
     "static/media/borrowlab.png": "/luna/static/media/borrowlab.2e6bae650b506419e081.png",
     "static/media/jitter.png": "/luna/static/media/jitter.062ff29c2fd156b69c20.png",
     "index.html": "/luna/index.html",
-    "main.bc4a386d.css.map": "/luna/static/css/main.bc4a386d.css.map",
-    "main.526a9d7b.js.map": "/luna/static/js/main.526a9d7b.js.map",
-    "300.c76a1915.chunk.js.map": "/luna/static/js/300.c76a1915.chunk.js.map",
+    "main.894aaec8.css.map": "/luna/static/css/main.894aaec8.css.map",
+    "main.8eead7c6.js.map": "/luna/static/js/main.8eead7c6.js.map",
+    "560.57ed4adf.chunk.js.map": "/luna/static/js/560.57ed4adf.chunk.js.map",
     "453.217ffa20.chunk.js.map": "/luna/static/js/453.217ffa20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc4a386d.css",
-    "static/js/main.526a9d7b.js"
+    "static/css/main.894aaec8.css",
+    "static/js/main.8eead7c6.js"
   ]
 }
