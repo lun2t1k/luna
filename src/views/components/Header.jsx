@@ -19,34 +19,32 @@ export default function Header() {
 
   return (
     <header className='header'>
-      <div className='header-wrap'>
-        <HashLink to='#navigation' className='header-logo'>
-          <Logo />
-        </HashLink>
+      <HashLink to='#navigation' className='header-logo'>
+        <Logo />
+      </HashLink>
 
-        <HashLink to='#footer' className='header-title'>
-          about design
-        </HashLink>
+      <HashLink to='#footer' className='header-title'>
+        about design
+      </HashLink>
 
-        <button
-          className={`header-settings-btn ${openSettings ? 'active' : ''}`}
-          onClick={() => {
-            toggleSettings()
-          }}
-        >
-          <svg width='30' height='14' viewBox='0 0 30 14' xmlns='http://www.w3.org/2000/svg' className='burger'>
-            <path d='M0 1H30M0 13H30' stroke='#fff' strokeWidth='2' />
-          </svg>
+      <button
+        className={`header-settings-btn ${openSettings ? 'active' : ''}`}
+        onClick={() => {
+          toggleSettings()
+        }}
+      >
+        <svg width='30' height='14' viewBox='0 0 30 14' xmlns='http://www.w3.org/2000/svg' className='burger'>
+          <path d='M0 1H30M0 13H30' stroke='#fff' strokeWidth='2' />
+        </svg>
 
-          <svg width='23' height='23' viewBox='0 0 23 23' xmlns='http://www.w3.org/2000/svg' className='close'>
-            <path d='M1.2132 1L22.4264 22.2132M22.2132 1L1 22.2132' stroke='white' strokeWidth='2' />
-          </svg>
-        </button>
+        <svg width='23' height='23' viewBox='0 0 23 23' xmlns='http://www.w3.org/2000/svg' className='close'>
+          <path d='M1.2132 1L22.4264 22.2132M22.2132 1L1 22.2132' stroke='white' strokeWidth='2' />
+        </svg>
+      </button>
 
-        <div className={`header-settings ${openSettings ? 'active' : ''}`}>
-          <ThemeSwitcher />
-          <LanguageSwitcher />
-        </div>
+      <div className={`header-settings ${openSettings ? 'active' : ''}`}>
+        <ThemeSwitcher />
+        <LanguageSwitcher />
       </div>
     </header>
   )

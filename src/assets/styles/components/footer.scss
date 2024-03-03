@@ -1,10 +1,7 @@
 .footer {
+  display: flex;
+  justify-content: space-between;
   margin-top: 140px;
-
-  &-wrap {
-    display: flex;
-    justify-content: space-between;
-  }
 
   &-left {
     display: flex;

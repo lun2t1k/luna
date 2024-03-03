@@ -1,5 +1,6 @@
 import {useEffect} from 'react'
-import ServiceLink from '../components/ServiceLink'
+import ContentTitle from '../components/ContentTitle'
+import ContentGrid from '../components/ContentGrid'
 
 import jitter from '../../assets/images/tools/jitter.png'
 import bezi from '../../assets/images/tools/bezi.png'
@@ -16,7 +17,7 @@ const links = [
   {title: 'bezi', href: 'https://www.bezi.com/recent', image: bezi, tags: ['3d']},
   {title: 'endless tools', href: 'https://beta.endlesstools.io/', image: endlessTools, tags: ['3d']},
   {title: 'spline', href: 'https://app.spline.design/home', image: spline, tags: ['3d', 'motion design']},
-  {title: 'borrowlab', href: 'https://www.burrowlab.com/demo', image: borrowlab, tags: ['fonts']},
+  {title: 'borrow lab', href: 'https://www.burrowlab.com/demo', image: borrowlab, tags: ['fonts']},
   {title: 'morflax studio', href: 'https://studio.morflax.com/', image: morflaxStudio, tags: ['3d']},
   {title: 'shots', href: 'https://www.shots.so/', image: shots, tags: ['posts', 'socials']},
   {title: 'mock rocket', href: 'https://app.mockrocket.io/', image: mockRocket, tags: ['3d', 'mockup', 'animation']},
@@ -31,20 +32,8 @@ export default function Tools() {
 
   return (
     <>
-      <div className='title'>
-        <div className='title-wrap'>
-          <h1>tools</h1>
-          <div className='title-count'>({links.length})</div>
-        </div>
-      </div>
-
-      <div className='content'>
-        <div className='content-grid'>
-          {links.map((link, i) => {
-            return <ServiceLink key={`link-${i}`} href={link.href} image={link.image} tags={link.tags} title={link.title} />
-          })}
-        </div>
-      </div>
+      <ContentTitle title='tools' number={links.length} />
+      <ContentGrid links={links} />
     </>
   )
 }
