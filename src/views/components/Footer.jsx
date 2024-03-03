@@ -1,33 +1,37 @@
 import {Link} from 'react-router-dom'
 import NavMenu from './NavMenu'
 
-export default function Footer() {
-  const socialLinks = [
-    {title: 'behance', subtitle: 'behance.net/lun2t1k', href: 'https://www.behance.net/lun2t1k'},
-    {title: 'dribbble', subtitle: 'dribbble.com/lun2t1k', href: 'https://dribbble.com/lun2t1k'},
-    {title: 'dprofile', subtitle: 'dprofile.ru/lun2t1k', href: 'https://dprofile.ru/lun2t1k'},
-    {title: 'pinterest', subtitle: 'pinterest.com/lun2t1k', href: 'https://pinterest.com/lun2t1k/'}
-  ]
+const socialLinks = [
+  {title: 'behance', subtitle: 'behance.net/lun2t1k', href: 'https://www.behance.net/lun2t1k'},
+  {title: 'dribbble', subtitle: 'dribbble.com/lun2t1k', href: 'https://dribbble.com/lun2t1k'},
+  {title: 'dprofile', subtitle: 'dprofile.ru/lun2t1k', href: 'https://dprofile.ru/lun2t1k'},
+  {title: 'pinterest', subtitle: 'pinterest.com/lun2t1k', href: 'https://pinterest.com/lun2t1k/'}
+]
 
-  const contactLinks = [
-    {title: 'luna vk', subtitle: 'vk.com/l74u2n00a1', href: 'https://vk.com/l74u2n00a1'},
-    {title: 'luna telegram', subtitle: 't.me/L74U2N00A1', href: 'https://t.me/L74U2N00A1'},
-    {title: 'email', subtitle: 'lun2t1k@gmail.com', href: 'mailto:lun2t1k@gmail.com'},
-    {title: 'telegram', subtitle: 't.me/lun2t1k', href: 'https://t.me/lun2t1k'}
-  ]
+const contactLinks = [
+  {title: 'luna vk', subtitle: 'vk.com/l74u2n00a1', href: 'https://vk.com/l74u2n00a1'},
+  {title: 'luna telegram', subtitle: 't.me/l74u2n00a1', href: 'https://t.me/l74u2n00a1'},
+  {title: 'email', subtitle: 'lun2t1k@gmail.com', href: 'mailto:lun2t1k@gmail.com'},
+  {title: 'telegram', subtitle: 't.me/lun2t1k', href: 'https://t.me/lun2t1k'}
+]
+
+export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'})
+  }
 
   return (
     <>
       <NavMenu />
 
-      <footer className='footer'>
+      <footer className='footer' id='footer'>
         <div className='footer-wrap'>
           <div className='footer-left'>
             <ul>
               <li>
-                <div className='theme dark text'>designed</div>
-                <div className='theme dark text'>/</div>
-                <div className='theme dark text'>
+                <div>designed</div>
+                <div>/</div>
+                <div>
                   figma, <br />
                   adobe illustrator, <br />
                   adobe photoshop
@@ -35,15 +39,15 @@ export default function Footer() {
               </li>
 
               <li>
-                <div className='theme dark text'>developed</div>
-                <div className='theme dark text'>/</div>
-                <div className='theme dark text'>react, scss</div>
+                <div>developed</div>
+                <div>/</div>
+                <div>react, scss</div>
               </li>
 
               <li>
-                <div className='theme dark text'>updated</div>
-                <div className='theme dark text'>/</div>
-                <div className='theme dark text'>05.03.2024</div>
+                <div>updated</div>
+                <div>/</div>
+                <div>05.03.2024</div>
               </li>
             </ul>
 
@@ -52,10 +56,10 @@ export default function Footer() {
                 {socialLinks.map((link, i) => {
                   return (
                     <li key={`socialLinks-${i}`}>
-                      <Link to={link.href} target='_blank' rel='noopener noreferrer' className='theme dark text'>
+                      <Link to={link.href} target='_blank' rel='noopener noreferrer'>
                         <span className='name'>{link.title}</span>
                         <span className='link'>{link.subtitle}</span>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18.85 18.85' className='theme dark svg'>
+                        <svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18.85 18.85'>
                           <polygon
                             fill='#fff'
                             points='.71 18.85 0 18.15 17.15 1 2.27 1 2.27 0 18.85 0 18.85 16.56 17.85 16.56 17.85 1.71 .71 18.85'
@@ -71,10 +75,10 @@ export default function Footer() {
                 {contactLinks.map((link, i) => {
                   return (
                     <li key={`contactLinks-${i}`}>
-                      <Link to={link.href} target='_blank' rel='noopener noreferrer' className='theme dark text'>
+                      <Link to={link.href} target='_blank' rel='noopener noreferrer'>
                         <span className='name'>{link.title}</span>
                         <span className='link'>{link.subtitle}</span>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18.85 18.85' className='theme dark svg'>
+                        <svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18.85 18.85'>
                           <polygon
                             fill='#fff'
                             points='.71 18.85 0 18.15 17.15 1 2.27 1 2.27 0 18.85 0 18.85 16.56 17.85 16.56 17.85 1.71 .71 18.85'
@@ -90,7 +94,7 @@ export default function Footer() {
 
           <div className='footer-right'>
             <div className='footer-right__top'>
-              <svg width='142' height='142' viewBox='0 0 142 142' fill='none' xmlns='http://www.w3.org/2000/svg' className='theme dark svg'>
+              <svg width='142' height='142' viewBox='0 0 142 142' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path
                   fillRule='evenodd'
                   clipRule='evenodd'
@@ -99,7 +103,7 @@ export default function Footer() {
                 />
               </svg>
 
-              <svg width='142' height='142' viewBox='0 0 142 142' fill='none' xmlns='http://www.w3.org/2000/svg' className='theme dark svg'>
+              <svg width='142' height='142' viewBox='0 0 142 142' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path
                   fillRule='evenodd'
                   clipRule='evenodd'
@@ -108,7 +112,7 @@ export default function Footer() {
                 />
               </svg>
 
-              <svg width='142' height='142' viewBox='0 0 142 142' fill='none' xmlns='http://www.w3.org/2000/svg' className='theme dark svg'>
+              <svg width='142' height='142' viewBox='0 0 142 142' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path
                   fillRule='evenodd'
                   clipRule='evenodd'
@@ -118,15 +122,8 @@ export default function Footer() {
               </svg>
             </div>
 
-            <div className='footer-right__bottom'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='200'
-                height='200'
-                viewBox='0 0 200 200'
-                fill='none'
-                className='theme dark svg text'
-              >
+            <div className='footer-right__bottom' onClick={() => scrollToTop()}>
+              <svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200' fill='none' className='text'>
                 <path
                   d='M47.1489 38.0938L37.5991 48.3846L23.6167 35.4073L22.4769 36.6345L37.6866 50.7485L48.3762 39.2335L47.1489 38.0938Z'
                   fill='white'
@@ -209,14 +206,7 @@ export default function Footer() {
                 />
               </svg>
 
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='154'
-                height='154'
-                viewBox='0 0 154 154'
-                fill='none'
-                className='theme dark svg moon'
-              >
+              <svg xmlns='http://www.w3.org/2000/svg' width='154' height='154' viewBox='0 0 154 154' fill='none' className='moon'>
                 <path
                   d='M77.19 153.195C56.7727 153.195 37.5766 145.244 23.1388 130.808C8.70102 116.371 0.74939 97.1763 0.74939 76.7605C0.74939 56.3447 8.70102 37.1501 23.1388 22.7134C37.5766 8.27672 56.7727 0.325684 77.19 0.325684C97.6073 0.325684 116.803 8.27672 131.241 22.7134C145.679 37.1501 153.631 56.3447 153.631 76.7605C153.631 97.1763 145.679 116.371 131.241 130.808C116.803 145.244 97.6073 153.195 77.19 153.195ZM77.19 2.43631C57.3366 2.43631 38.6712 10.1672 24.6314 24.2059C10.5917 38.2446 2.86018 56.9086 2.86018 76.7605C2.86018 96.6125 10.5917 115.276 24.6314 129.315C38.6712 143.354 57.3366 151.085 77.19 151.085C97.0435 151.085 115.709 143.354 129.749 129.315C143.788 115.276 151.52 96.6125 151.52 76.7605C151.52 56.9086 143.788 38.2446 129.749 24.2059C115.709 10.1672 97.0435 2.43631 77.19 2.43631Z'
                   fill='white'

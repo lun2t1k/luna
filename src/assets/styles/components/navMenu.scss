@@ -20,19 +20,19 @@
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
-    
+
     &:hover {
       padding-left: 148px;
 
       .slash {
         transform: translateX(0%);
       }
-      
+
       .arrow {
         transform: translateX(100%);
       }
     }
-      
+
     .slash {
       font-size: 200px;
       font-weight: 400;

@@ -1,16 +1,15 @@
-@import "./common/fonts";
-@import "./common/variables";
-@import "./common/normalize";
-@import "./common/general";
-@import "./common/color-themes";
+@import './common/fonts';
+@import './common/normalize';
+@import './common/general';
+@import './common/themes';
 
-@import "./components/header";
-@import "./components/navMenu";
-@import "./components/footer";
+@import './components/header';
+@import './components/navMenu';
+@import './components/footer';
 
-@import "./partials/hero";
-@import "./partials/title";
-@import "./partials/content";
+@import './partials/hero';
+@import './partials/title';
+@import './partials/content';
 
 @keyframes rotate-loop {
   0% {

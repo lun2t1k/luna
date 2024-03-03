@@ -1,5 +1,6 @@
 * {
-  font-family: $font-eng;
+  font-family: 'Major Mono Display', sans-serif;
+  // font-family: 'Mulish', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
@@ -21,13 +22,18 @@ html {
     visibility: hidden;
   }
 
+  scroll-behavior: smooth;
   cursor: none;
 }
 
 body {
   padding: 110px 0;
 
-  @media(min-width: $bp-min-768) {
+  @media screen and (max-width: 1200px) {
+    padding: 70px 0;
+  }
+
+  @media screen and (min-width: 768px) {
     overflow: hidden auto;
   }
 }
@@ -39,21 +45,55 @@ body {
   padding: 0 20px;
 }
 
-button, a {
+button,
+a {
   cursor: none;
 }
 
 .cursor {
   width: 40px;
   height: 40px;
+  background-color: #fff;
   border-radius: 100%;
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: width .3s, height .3s;
+  transition:
+    width 0.3s,
+    height 0.3s;
+  mix-blend-mode: difference;
+  z-index: 9999999;
 }
 
 .cursorclick {
   width: 60px;
   height: 60px;
+}
+
+.loading {
+  width: 100%;
+  height: calc(100vh - 110px - 173px);;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .spinner {
+    width: 100px;
+    height: 100px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid;
+    border-radius: 100px;
+    animation: 0.7s rotate-loop infinite linear reverse;
+
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+      border-top: 6px solid transparent;
+      border-left: 6px solid;
+      border-bottom: 6px solid transparent;
+      border-right: 6px solid;
+    }
+  }
 }

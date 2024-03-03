@@ -26,15 +26,15 @@ const links = [
 export default function Tools() {
   useEffect(() => {
     document.title = 'LUNA / TOOLS'
-    // window.scrollTo({top: 0, behavior: 'instant'})
+    window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 
   return (
     <>
       <div className='title'>
         <div className='title-wrap'>
-          <h1 className='theme dark text'>tools</h1>
-          <div className='theme dark text title-count'>({links.length})</div>
+          <h1>tools</h1>
+          <div className='title-count'>({links.length})</div>
         </div>
       </div>
 
