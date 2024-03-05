@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/luna/static/css/main.f889ae3e.css",
+    "main.css": "/luna/static/css/main.c2310e0d.css",
     "main.js": "/luna/static/js/main.8eead7c6.js",
     "static/js/560.57ed4adf.chunk.js": "/luna/static/js/560.57ed4adf.chunk.js",
     "static/js/453.217ffa20.chunk.js": "/luna/static/js/453.217ffa20.chunk.js",
@@ -16,13 +16,13 @@
     "static/media/borrowlab.png": "/luna/static/media/borrowlab.2e6bae650b506419e081.png",
     "static/media/jitter.png": "/luna/static/media/jitter.062ff29c2fd156b69c20.png",
     "index.html": "/luna/index.html",
-    "main.f889ae3e.css.map": "/luna/static/css/main.f889ae3e.css.map",
+    "main.c2310e0d.css.map": "/luna/static/css/main.c2310e0d.css.map",
     "main.8eead7c6.js.map": "/luna/static/js/main.8eead7c6.js.map",
     "560.57ed4adf.chunk.js.map": "/luna/static/js/560.57ed4adf.chunk.js.map",
     "453.217ffa20.chunk.js.map": "/luna/static/js/453.217ffa20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f889ae3e.css",
+    "static/css/main.c2310e0d.css",
     "static/js/main.8eead7c6.js"
   ]
 }
