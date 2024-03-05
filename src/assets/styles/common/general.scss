@@ -22,11 +22,13 @@ html {
     visibility: hidden;
   }
 
+  overflow-x: hidden;
   scroll-behavior: smooth;
   cursor: none;
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
   padding: 110px 0;
 
