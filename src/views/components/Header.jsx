@@ -11,9 +11,11 @@ export default function Header() {
     setOpenSettings(!openSettings)
 
     if (openSettings === false) {
-      document.body.style.overflow = 'hidden'
+      document.querySelector('html').style.overflow = 'hidden'
+      document.querySelector('body').style.overflow = 'hidden'
     } else {
-      document.body.style.overflow = ''
+      document.querySelector('html').style.overflow = ''
+      document.querySelector('body').style.overflow = ''
     }
   }
 

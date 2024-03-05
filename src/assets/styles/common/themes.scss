@@ -33,11 +33,7 @@
   }
 
   .nav-link-border {
-    border-bottom-color: #fff;
-
-    &:first-child {
-      border-top-color: #fff;
-    }
+    border-color: #fff;
   }
 }
 
@@ -76,10 +72,6 @@
   }
 
   .nav-link-border {
-    border-bottom-color: #000;
-
-    &:first-child {
-      border-top-color: #000;
-    }
+    border-color: #000;
   }
 }
