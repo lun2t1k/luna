@@ -1,16 +1,37 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  gap: 140px;
   margin-top: 140px;
+
+  @media screen and (max-width: 1600px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 80px;
+  }
 
   &-left {
     display: flex;
     flex-direction: column;
     gap: 140px;
 
+    @media screen and (max-width: 768px) {
+      gap: 80px;
+    }
+
     &__links {
       display: flex;
       gap: 140px;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 768px) {
+        gap: 80px;
+      }
     }
 
     ul {
@@ -22,11 +43,30 @@
         display: flex;
         gap: 32px;
 
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 140%;
+        text-transform: lowercase;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 24px;
+          gap: 24px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+          gap: 18px;
+        }
+
+        @media screen and (max-width: 576px) {
+          flex-wrap: wrap;
+        }
+
         div {
-          font-size: 32px;
-          font-weight: 400;
-          line-height: 140%;
-          text-transform: lowercase;
+          font-size: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+          text-transform: inherit;
         }
 
         a {
@@ -36,11 +76,16 @@
           gap: 32px;
           overflow: hidden;
 
+          font-size: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+          text-transform: inherit;
+
           span {
-            font-size: 32px;
-            font-weight: 400;
-            line-height: 140%;
-            text-transform: lowercase;
+            font-size: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            text-transform: inherit;
           }
 
           .link {
@@ -70,10 +115,18 @@
     justify-content: space-between;
     align-items: flex-end;
 
+    @media screen and (max-width: 1600px) {
+      align-items: flex-start;
+    }
+
     &__top {
       display: flex;
       align-items: center;
       gap: 60px;
+
+      @media screen and (max-width: 1600px) {
+        display: none;
+      }
     }
 
     &__bottom {
