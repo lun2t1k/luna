@@ -40,7 +40,7 @@ export default function Header() {
         </svg>
 
         <svg width='23' height='23' viewBox='0 0 23 23' xmlns='http://www.w3.org/2000/svg' className='close'>
-          <path d='M1.2132 1L22.4264 22.2132M22.2132 1L1 22.2132' stroke='white' strokeWidth='2' />
+          <path d='M1.2132 1L22.4264 22.2132M22.2132 1L1 22.2132' stroke='#fff' strokeWidth='2' />
         </svg>
       </button>
 

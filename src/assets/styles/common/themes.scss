@@ -25,6 +25,14 @@
   .header-settings {
     background-color: #000;
 
+    &-btn {
+      .burger, .close {
+        path {
+          stroke: #fff;
+        }
+      }
+    }
+
     ul li {
       &::after {
         background-color: #fff;
@@ -63,6 +71,14 @@
 
   .header-settings {
     background-color: #fff;
+
+    &-btn {
+      .burger, .close {
+        path {
+          stroke: #000;
+        }
+      }
+    }
 
     ul li {
       &::after {
