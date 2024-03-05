@@ -5,15 +5,17 @@ export default function NavMenu() {
     {title: 'home', href: '/'},
     {title: 'projects', href: '/projects'},
     {title: 'about', href: '/about'},
-    {title: 'design', href: '/design'},
     {title: 'fonts', href: '/fonts'},
-    {title: 'colors', href: '/colors'},
-    {title: 'tools', href: '/tools'},
+    {title: 'text', href: '/text'},
     {title: 'images', href: '/images'},
     {title: 'icons', href: '/icons'},
-    {title: 'mockups', href: '/mockups'},
+    {title: 'colors', href: '/colors'},
+    {title: 'tools', href: '/tools'},
     {title: 'ai', href: '/ai'},
-    {title: 'assets', href: '/assets'}
+    {title: 'design', href: '/design'},
+    {title: 'mockups', href: '/mockups'},
+    {title: 'assets', href: '/assets'},
+    {title: 'games', href: '/games'}
   ]
 
   return (

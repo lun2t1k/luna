@@ -1,11 +1,11 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  gap: 140px;
   margin-top: 140px;
-
-  @media screen and (max-width: 1600px) {
+  
+  @media screen and (max-width: 1608px) {
     flex-direction: column;
+    gap: 140px;
   }
 
   @media screen and (max-width: 768px) {
@@ -115,7 +115,7 @@
     justify-content: space-between;
     align-items: flex-end;
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1608px) {
       align-items: flex-start;
     }
 
@@ -124,7 +124,7 @@
       align-items: center;
       gap: 60px;
 
-      @media screen and (max-width: 1600px) {
+      @media screen and (max-width: 1608px) {
         display: none;
       }
     }
