@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Node version: v20.11.0 Npm version: v10.2.4
+Node version: v20.11.0\
+Npm version: v10.2.4
 
 ## Available Scripts
 
