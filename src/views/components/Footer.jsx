@@ -24,7 +24,7 @@ export default function Footer() {
     <>
       <NavMenu />
 
-      <footer className='footer' id='footer'>
+      <footer className='footer' id='contacts'>
         <div className='footer-left'>
           <ul>
             <li>

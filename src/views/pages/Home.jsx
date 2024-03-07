@@ -17,7 +17,7 @@ export default function Home() {
           />
         </svg>
 
-        <HashLink to='#navigation' className='hero-scroll'>
+        <HashLink to='#menu' className='hero-scroll'>
           scroll down
         </HashLink>
       </div>

@@ -19,7 +19,7 @@ export default function NavMenu() {
   ]
 
   return (
-    <nav className='nav' id='navigation'>
+    <nav className='nav' id='menu'>
       <ul>
         {menuLinks.map((link, i) => {
           return (

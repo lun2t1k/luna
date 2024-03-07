@@ -21,11 +21,11 @@ export default function Header() {
 
   return (
     <header className='header'>
-      <HashLink to='#navigation' className='header-logo'>
+      <HashLink to='#menu' className='header-logo'>
         <Logo />
       </HashLink>
 
-      <HashLink to='#footer' className='header-title'>
+      <HashLink to='#contacts' className='header-title'>
         about design
       </HashLink>
 
