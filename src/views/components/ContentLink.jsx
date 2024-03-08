@@ -5,7 +5,7 @@ export default function ContentLink(props) {
   return (
     <Link to={props.href} target='_blank' rel='noopener noreferrer' className='content-card' data-aos='zoom-in' data-aos-offset='100'>
       <div className='content-card__image'>
-        <img src={props.image} alt='' />
+        <img src={props.image} alt='' loading='lazy' />
       </div>
 
       <div className='content-card__tags'>
