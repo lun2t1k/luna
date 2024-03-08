@@ -12,8 +12,8 @@ export default function NavMenu() {
     {title: 'colors', href: '/colors'},
     {title: 'tools', href: '/tools'},
     {title: 'ai', href: '/ai'},
-    {title: 'design', href: '/design'},
     {title: 'mockups', href: '/mockups'},
+    {title: 'design', href: '/design'},
     {title: 'assets', href: '/assets'},
     {title: 'games', href: '/games'}
   ]

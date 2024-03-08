@@ -10,6 +10,9 @@ const Icons = withSuspense(lazy(() => import('./views/pages/Icons')))
 const Colors = withSuspense(lazy(() => import('./views/pages/Colors')))
 const Tools = withSuspense(lazy(() => import('./views/pages/Tools')))
 const Ai = withSuspense(lazy(() => import('./views/pages/Ai')))
+const Mockups = withSuspense(lazy(() => import('./views/pages/Mockups')))
+const Design = withSuspense(lazy(() => import('./views/pages/Design')))
+const Assets = withSuspense(lazy(() => import('./views/pages/Assets')))
 const Games = withSuspense(lazy(() => import('./views/pages/Games')))
 
 const routes = [
@@ -48,6 +51,18 @@ const routes = [
   {
     path: '/ai',
     component: <Ai />
+  },
+  {
+    path: '/mockups',
+    component: <Mockups />
+  },
+  {
+    path: '/design',
+    component: <Design />
+  },
+  {
+    path: '/assets',
+    component: <Assets />
   },
   {
     path: '/games',
