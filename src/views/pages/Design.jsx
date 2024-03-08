@@ -17,7 +17,12 @@ import siiimple from '../../assets/images/design/siiimple.png'
 import designhub from '../../assets/images/design/designhub.png'
 
 const links = [
-  {title: 'human interface guidelines', href: 'https://developer.apple.com/design/', image: humaninterfaceguidelines, tags: ['apple', 'guidelines']},
+  {
+    title: 'human interface guidelines',
+    href: 'https://developer.apple.com/design/',
+    image: humaninterfaceguidelines,
+    tags: ['apple', 'guidelines']
+  },
   {title: 'material design', href: 'https://m3.material.io/', image: materialdesign, tags: ['google', 'guidelines']},
   {title: 'curated design', href: 'https://www.curated.design/', image: curateddesign, tags: ['inspiration']},
   {title: 'footer design', href: 'https://www.footer.design/', image: footerdesign, tags: ['inspiration']},

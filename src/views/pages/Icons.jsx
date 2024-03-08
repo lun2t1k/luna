@@ -21,7 +21,7 @@ const links = [
   {title: 'themeui', href: 'https://themeui.net/free-icons/', image: themeui, tags: ['icons']},
   {title: 'icon finder', href: 'https://www.iconfinder.com/', image: iconfinder, tags: ['icons', '3d', 'illustrations']},
   {title: 'brand logos', href: 'https://brandlogos.net/', image: brandlogos, tags: ['svg', 'eps']},
-  {title: 'vector logo zone', href: 'https://www.vectorlogo.zone/', image: vectorlogozone, tags: ['svg']},
+  {title: 'vector logo zone', href: 'https://www.vectorlogo.zone/', image: vectorlogozone, tags: ['svg']}
 ]
 
 export default function Icons() {

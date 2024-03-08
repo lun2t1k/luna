@@ -21,7 +21,12 @@ const links = [
   {title: 'ai create', href: 'https://aicreate.com/', image: aicreate, tags: ['design', 'typography', 'code']},
   {title: 'luma labs', href: 'https://lumalabs.ai/genie?view=create', image: lumalabs, tags: ['3d', 'scenes']},
   {title: 'google ai', href: 'https://aitestkitchen.withgoogle.com', image: imagefx, tags: ['images', 'music', 'typography']},
-  {title: 'vizcom', href: 'https://app.vizcom.ai/files/d297656b-54eb-41dd-a336-c568778ef35c/recent', image: vizcom, tags: ['images', 'drawing']}
+  {
+    title: 'vizcom',
+    href: 'https://app.vizcom.ai/files/d297656b-54eb-41dd-a336-c568778ef35c/recent',
+    image: vizcom,
+    tags: ['images', 'drawing']
+  }
 ]
 
 export default function Ai() {

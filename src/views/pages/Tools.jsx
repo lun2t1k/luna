@@ -19,7 +19,7 @@ const links = [
   {title: 'bezi', href: 'https://www.bezi.com/recent', image: bezi, tags: ['3d', 'team']},
   {title: 'spline', href: 'https://app.spline.design/home', image: spline, tags: ['3d', 'motion design']},
   {title: 'burrow lab', href: 'https://www.burrowlab.com/demo', image: burrowlab, tags: ['fonts', 'png']},
-  {title: 'figpea', href: 'https://figpea.com/', image: figpea, tags: ['psd', 'ai', 'xd']},
+  {title: 'figpea', href: 'https://figpea.com/', image: figpea, tags: ['psd', 'ai', 'xd']}
 ]
 
 export default function Tools() {
