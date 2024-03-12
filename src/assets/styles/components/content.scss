@@ -46,7 +46,7 @@
       text-transform: lowercase;
 
       @media screen and (min-width: 1780px) {
-        font-size: 249px;
+        font-size: 245px;
       }
     }
 
@@ -70,10 +70,46 @@
       flex: 1 0 calc(50% - 20px);
       max-width: 50%;
     }
-
+    
     @media screen and (max-width: 576px) {
       flex: 1 0 100%;
       max-width: 100%;
+    }
+    
+    &--wide {
+      flex: 1 0 calc(50% - 20px);
+      max-width: 50%;
+      
+      @media screen and (max-width: 1260px) {
+        flex: 1 0 calc(49% - 20px);
+        max-width: 49%;
+      }
+      
+      @media screen and (max-width: 660px) {
+        flex: 1 0 calc(48% - 20px);
+        max-width: 48%;
+      }
+
+      @media screen and (max-width: 576px) {
+        flex: 1 0 100%;
+        max-width: 100%;
+      }
+
+      .content-card__image {
+        height: 600px;
+
+        @media screen and (max-width: 1200px) {
+          height: 450px;
+        }
+
+        @media screen and (max-width: 992px) {
+          height: 350px;
+        }
+
+        @media screen and (max-width: 768px) {
+          height: 300px;
+        }
+      }
     }
 
     &:hover {

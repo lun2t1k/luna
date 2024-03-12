@@ -3,6 +3,16 @@ import {withSuspense} from './withSuspense'
 import Home from './views/pages/Home'
 import PageNotFound from './views/pages/PageNotFound'
 
+const Projects = withSuspense(lazy(() => import('./views/pages/Projects')))
+const Wallet = withSuspense(lazy(() => import('./views/pages/projects/Wallet/Wallet')))
+const FoodDelivery = withSuspense(lazy(() => import('./views/pages/projects/FoodDelivery/FoodDelivery')))
+const Tickets = withSuspense(lazy(() => import('./views/pages/projects/Tickets/Tickets')))
+const Fitness = withSuspense(lazy(() => import('./views/pages/projects/Fitness/Fitness')))
+const BusinessCard = withSuspense(lazy(() => import('./views/pages/projects/BusinessCard/BusinessCard')))
+const Cryptocurrency = withSuspense(lazy(() => import('./views/pages/projects/Cryptocurrency/Cryptocurrency')))
+const SmartHome = withSuspense(lazy(() => import('./views/pages/projects/SmartHome/SmartHome')))
+const SwissWatch = withSuspense(lazy(() => import('./views/pages/projects/SwissWatch/SwissWatch')))
+const FreshPress = withSuspense(lazy(() => import('./views/pages/projects/FreshPress/FreshPress')))
 const Fonts = withSuspense(lazy(() => import('./views/pages/Fonts')))
 const Text = withSuspense(lazy(() => import('./views/pages/Text')))
 const Images = withSuspense(lazy(() => import('./views/pages/Images')))
@@ -23,6 +33,46 @@ const routes = [
   {
     path: '/',
     component: <Home />
+  },
+  {
+    path: '/projects',
+    component: <Projects />
+  },
+  {
+    path: '/projects/wallet',
+    component: <Wallet />
+  },
+  {
+    path: '/projects/food-delivery',
+    component: <FoodDelivery />
+  },
+  {
+    path: '/projects/tickets',
+    component: <Tickets />
+  },
+  {
+    path: '/projects/fitness',
+    component: <Fitness />
+  },
+  {
+    path: '/projects/business-card',
+    component: <BusinessCard />
+  },
+  {
+    path: '/projects/crypto-currency-courses',
+    component: <Cryptocurrency />
+  },
+  {
+    path: '/projects/smart-home',
+    component: <SmartHome />
+  },
+  {
+    path: '/projects/swiss-watch',
+    component: <SwissWatch />
+  },
+  {
+    path: '/projects/fresh-and-press',
+    component: <FreshPress />
   },
   {
     path: '/fonts',
