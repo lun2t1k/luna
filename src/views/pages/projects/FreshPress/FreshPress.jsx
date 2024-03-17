@@ -6,7 +6,7 @@ import project from './assets/project.png'
 
 export default function FreshPress() {
   useEffect(() => {
-    document.title = 'LUNA / FRESH&PRESS'
+    document.title = 'LUNA / PROJECTS / FRESH&PRESS'
     window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 

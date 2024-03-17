@@ -6,7 +6,7 @@ import project from './assets/project.png'
 
 export default function SmartHome() {
   useEffect(() => {
-    document.title = 'LUNA / SMART HOME'
+    document.title = 'LUNA / PROJECTS / SMART HOME'
     window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 

@@ -6,7 +6,7 @@ import project from './assets/project.png'
 
 export default function SwissWatch() {
   useEffect(() => {
-    document.title = 'LUNA / SWISS WATCH'
+    document.title = 'LUNA / PROJECTS / SWISS WATCH'
     window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 

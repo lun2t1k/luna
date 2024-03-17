@@ -6,7 +6,7 @@ import project from './assets/project.png'
 
 export default function Cryptocurrency() {
   useEffect(() => {
-    document.title = 'LUNA / CRYPTO CURRENCY COURSES'
+    document.title = 'LUNA / PROJECTS / CRYPTO CURRENCY COURSES'
     window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 

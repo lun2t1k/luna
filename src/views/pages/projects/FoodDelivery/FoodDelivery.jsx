@@ -6,7 +6,7 @@ import project from './assets/project.png'
 
 export default function FoodDelivery() {
   useEffect(() => {
-    document.title = 'LUNA / FOOD DELIVERY'
+    document.title = 'LUNA / PROJECTS / FOOD DELIVERY'
     window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 

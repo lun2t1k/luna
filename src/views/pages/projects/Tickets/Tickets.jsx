@@ -6,7 +6,7 @@ import project from './assets/project.png'
 
 export default function Tickets() {
   useEffect(() => {
-    document.title = 'LUNA / TICKETS'
+    document.title = 'LUNA / PROJECTS / TICKETS'
     window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 

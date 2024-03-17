@@ -6,7 +6,7 @@ import project from './assets/project.png'
 
 export default function BusinessCard() {
   useEffect(() => {
-    document.title = 'LUNA / 3D ARTIST BUSINESS CARD'
+    document.title = 'LUNA / PROJECTS / 3D ARTIST BUSINESS CARD'
     window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 

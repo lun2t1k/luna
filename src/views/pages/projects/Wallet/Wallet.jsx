@@ -6,7 +6,7 @@ import project from './assets/project.png'
 
 export default function Wallet() {
   useEffect(() => {
-    document.title = 'LUNA / WALLET'
+    document.title = 'LUNA / PROJECTS / WALLET'
     window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 

@@ -6,7 +6,7 @@ import project from './assets/project.png'
 
 export default function Fitness() {
   useEffect(() => {
-    document.title = 'LUNA / FITNESS'
+    document.title = 'LUNA / PROJECTS / FITNESS'
     window.scrollTo({top: 0, behavior: 'instant'})
   }, [])
 
