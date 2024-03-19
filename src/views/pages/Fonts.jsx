@@ -15,6 +15,7 @@ import cufon from '../../assets/images/fonts/cufon.png'
 import ofont from '../../assets/images/fonts/ofont.png'
 import azfonts from '../../assets/images/fonts/azfonts.png'
 import fontsquirrel from '../../assets/images/fonts/fontsquirrel.png'
+import fontbrief from '../../assets/images/fonts/fontbrief.png'
 
 const links = [
   {title: 'free faces', href: 'https://www.freefaces.gallery/', image: freefaces, tags: ['gallery']},
@@ -29,7 +30,8 @@ const links = [
   {title: 'cufon fonts', href: 'https://www.cufonfonts.com/', image: cufon, tags: ['library']},
   {title: 'ofont', href: 'https://ofont.ru/', image: ofont, tags: ['library']},
   {title: 'azfonts', href: 'https://ru.azfonts.net/fonts/free', image: azfonts, tags: ['library']},
-  {title: 'font squirrel', href: 'https://www.fontsquirrel.com/', image: fontsquirrel, tags: ['library', 'ai search']}
+  {title: 'font squirrel', href: 'https://www.fontsquirrel.com/', image: fontsquirrel, tags: ['library', 'ai search']},
+  {title: 'font brief', href: 'https://www.fontbrief.com/fontbrief', image: fontbrief, tags: ['library', 'filter']}
 ]
 
 export default function Fonts() {
