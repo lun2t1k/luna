@@ -4,6 +4,7 @@ import Home from './views/pages/Home'
 import PageNotFound from './views/pages/PageNotFound'
 
 const Projects = withSuspense(lazy(() => import('./views/pages/Projects')))
+const Skepti = withSuspense(lazy(() => import('./views/pages/projects/Skepti/Skepti')))
 const Wallet = withSuspense(lazy(() => import('./views/pages/projects/Wallet/Wallet')))
 const FoodDelivery = withSuspense(lazy(() => import('./views/pages/projects/FoodDelivery/FoodDelivery')))
 const Tickets = withSuspense(lazy(() => import('./views/pages/projects/Tickets/Tickets')))
@@ -37,6 +38,10 @@ const routes = [
   {
     path: '/projects',
     component: <Projects />
+  },
+  {
+    path: '/projects/skepti',
+    component: <Skepti />
   },
   {
     path: '/projects/wallet',

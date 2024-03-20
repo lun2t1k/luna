@@ -46,7 +46,7 @@ export default function Footer() {
             <li>
               <div>updated</div>
               <div>/</div>
-              <div>19.03.2024</div>
+              <div>20.03.2024</div>
             </li>
           </ul>
 

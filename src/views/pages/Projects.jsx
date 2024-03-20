@@ -2,6 +2,7 @@ import {useEffect} from 'react'
 import ContentTitle from '../components/ContentTitle'
 import ContentGrid from '../components/ContentGrid'
 
+import skepti from './projects/Skepti/assets/cover.png'
 import wallet from './projects/Wallet/assets/cover.png'
 import fooddelivery from './projects/FoodDelivery/assets/cover.png'
 import tickets from './projects/Tickets/assets/cover.png'
@@ -13,6 +14,7 @@ import swisswatch from './projects/SwissWatch/assets/cover.png'
 import freshpress from './projects/FreshPress/assets/cover.png'
 
 const links = [
+  {title: 'skepti', href: '/projects/skepti', image: skepti, tags: ['app']},
   {title: 'wallet', href: '/projects/wallet', image: wallet, tags: ['app']},
   {title: 'food delivery', href: '/projects/food-delivery', image: fooddelivery, tags: ['app']},
   {title: 'tickets', href: '/projects/tickets', image: tickets, tags: ['app']},
